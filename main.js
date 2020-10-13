@@ -5,7 +5,7 @@ btn.addEventListener('click', loadUsers);
 function loadUsers() {
 
     var xhr = new XMLHttpRequest();
-    xhr.open('Get', 'https://api.github.com/users/narurathod', true);
+    xhr.open('Get', 'https://api.github.com/users', true);
     xhr.onload = function () {
         if (this.status == 200) {
             var users = JSON.parse(this.responseText);
